@@ -53,9 +53,9 @@ const useStyles = makeStyles((theme: Theme) =>
       padding:'15px',
       position: "relative",
       borderRadius: theme.shape.borderRadius,
-      backgroundColor: "#fff",
+      backgroundColor: "#008C97",
       "&:hover": {
-        backgroundColor: "#fff",
+        backgroundColor: "#008C97",
       },
       marginRight: theme.spacing(2),
       marginLeft: 0,
@@ -108,7 +108,7 @@ function searchInput() {
       className={classes.bgSearch}
       style={{
         backgroundImage:
-          "url(/images/general-large-6b86fad29f1e8919155e0a9e5bcd54b7.jpg)",
+          "url(/images/general-large-6b86fad29f1e8919155e0a9e5bcd54b7.png)",
       }}
     >
       <form

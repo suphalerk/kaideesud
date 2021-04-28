@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
     textHeader: {
       margin: "0px",
       fontSize: "1.5em",
-      color: "#213aa3",
+      color: "#000",
       fontWeight: "bold",
 
       ["@media (width:375px)"]: {
@@ -38,11 +38,11 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     textGreen: {
       textAlign: "left",
-      color: "#00C900",
+      color: "#FF5100",
       fontSize: "16px",
       ["@media (width:375px)"]: {
         textAlign: "left",
-        color: "#00C900",
+        color: "#FF5100",
         fontSize: "8px",
       },
       ["@media (max-width:500px)"]: {
@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     textMore: {
-      color: "#429EFE",
+      color: "#111",
       fontSize: "16px",
       textAlign: "left",
       margin: "0px 0px -7px 0px",

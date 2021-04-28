@@ -12,16 +12,20 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     root: {
       flexGrow: 1,
+      backgroundColor: "#008C97",
     },
     paper: {
       padding: theme.spacing(2),
       textAlign: "center",
       color: theme.palette.text.secondary,
-      backgroundColor: "#fff",
+      backgroundColor: "#008C97",
       boxShadow: "none",
+      border: "solid 3px",
+      borderColor: " #fff",
+      borderRadius: "15px",
     },
     textLink: {
-      color: "#111",
+      color: "#fff",
       fontSize: "14px",
     },
     gridCon: {
@@ -43,7 +47,7 @@ const useStyles = makeStyles((theme: Theme) =>
       placeContent: "center",
     },
     expand: {
-      color: "#00C900",
+      color: "#fff",
       transform: "rotate(0deg)",
       marginLeft: "auto",
       transition: theme.transitions.create("transform", {
@@ -223,7 +227,7 @@ const FullWidthGrid = (props: { keywords: Keyword[] }) => {
         aria-expanded={expanded}
         aria-label="show more"
       >
-        {expanded == true ? 'ดูน้อยลง' : 'ดูทั้งหมด'}
+        {expanded == true ? "ดูน้อยลง" : "ดูทั้งหมด"}
         <img
           style={{ margin: "-4px 4px", width: "17px", height: "auto" }}
           src="/images/dropdown.png"
