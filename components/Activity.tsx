@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: "0px",
     },
     more: {
-      color: "#429EFE",
+      color: "#000",
       width: "fit-content",
       fontSize: "13px",
       float: "right",

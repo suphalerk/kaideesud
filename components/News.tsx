@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     more: {
-      color: "#429EFE",
+      color: "#000",
       width: "fit-content",
       fontSize: "13px",
       float: "right",

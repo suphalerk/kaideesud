@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     textHeader: {
       fontSize: "1.5em",
-      color: "#213aa3",
+      color: "#000",
       fontWeight: "bold",
 
       ["@media (width:375px)"]: {
