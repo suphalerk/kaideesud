@@ -1,9 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import { createStyles, Grid, Link, Paper, Theme } from "@material-ui/core";
+import { Button, createStyles, Grid, Link, Paper, Theme } from "@material-ui/core";
 import Image from "next/image";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { Content } from "../interfaces/product";
+import { QuestionAnswer, PhoneCallback } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
       color: theme.palette.text.secondary,
       backgroundColor: "#fff",
       border: "solid 1px #e1e1e1",
-      padding: "0px",
+      paddingBottom:'1em'
     },
     mobileDetail: {
       width: "217",
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
 
     more: {
-      color: "#429EFE",
+      color: "#000",
       width: "fit-content",
       fontSize: "13px",
       float: "right",
@@ -104,7 +105,7 @@ const useStyles = makeStyles((theme: Theme) =>
     textCost: {
       textAlign: "left",
       fontSize: "2em",
-      color: "#00C900",
+      color: "#FF5100",
       fontWeight: "bold",
       paddingLeft: "5px",
       marginTop: "0px",
@@ -134,6 +135,24 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     arrow: {
       float: "right",
+    },
+    btnCall : {
+      backgroundColor:"#FF5100",
+      color:"#fff",
+      borderRadius:"15px",
+      paddingLeft: '40px',
+      paddingRight: '40px',
+      paddingTop:'10px',
+      paddingBottom:'10px',
+    },
+    btnChat:{
+      backgroundColor:"#008C97",
+      color:"#fff",
+      borderRadius:"15px",
+      paddingLeft: '40px',
+      paddingRight: '40px',
+      paddingTop:'10px',
+      paddingBottom:'10px',
     },
   })
 );
@@ -176,22 +195,10 @@ export default function MediaCard(props: { contents: Content }) {
                 <p className={classes.textCost} >฿ {Intl.NumberFormat('th-TH', {minimumFractionDigits: 0}).format(item.price)}</p>
                 <Grid className={classes.gridFlex}>
                   <Grid item xs lg={6}>
-                    <Image
-                      className="img-chat"
-                      src="/images/Chat.png"
-                      alt=""
-                      width={"130"}
-                      height={"45"}
-                    />
+                  <Button className={classes.btnChat} variant="contained"><QuestionAnswer/>แชท</Button>
                   </Grid>
                   <Grid item xs lg={6}>
-                    <Image
-                      className="img-call"
-                      src="/images/Call.png"
-                      alt=""
-                      width={"130"}
-                      height={"45"}
-                    />
+                  <Button className={classes.btnCall} variant="contained"><PhoneCallback/>โทร</Button>
                   </Grid>
                 </Grid>
               </Paper>

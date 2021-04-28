@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     position: {},
     bgSearch: {
-      backgroundColor: "#00C900",
+      backgroundColor: "#008C97",
       height: "auto",
 
       ["@media (max-width:800px)"]: {

@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme: Theme) =>
     textPrice: {
       textAlign: "right",
       fontSize: "2em",
-      color: "#00C900",
+      color: "#FF5100",
       fontWeight: "bold",
       margin: "0px",
     },
