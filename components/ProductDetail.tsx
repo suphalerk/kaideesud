@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Image from "next/image";
 
 import { Button } from "@material-ui/core";
-import { CalendarToday, FavoriteBorder } from "@material-ui/icons";
+import { CalendarToday, FavoriteBorder, PhoneCallback, QuestionAnswer } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -66,10 +66,10 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     paper7: {
       padding: "6px",
-      textAlign: "left",
       color: "#222",
       boxShadow: "none",
       backgroundColor: "#fff",
+      textAlign:"center",
     },
     paper8: {
       padding: "6px",
@@ -232,6 +232,26 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: "3px",
       backgroundColor: "#fff",
       boxShadow: "none",
+    },
+    btnCall : {
+      backgroundColor:"#FF5100",
+      color:"#fff",
+      borderRadius:"15px",
+      paddingLeft: '110px',
+      paddingRight: '110px',
+      paddingTop:'10px',
+      paddingBottom:'10px',
+      
+    },
+    btnChat:{
+      backgroundColor:"#008C97",
+      color:"#fff",
+      borderRadius:"15px",
+      paddingLeft: '100px',
+      paddingRight: '100px',
+      paddingTop:'10px',
+      paddingBottom:'10px',
+     
     },
   })
 );
@@ -440,22 +460,12 @@ export default function FullWidthGrid(props: { data: any }) {
             <Grid className={classes.gridChat}>
               <Grid item xs={6} md={6} lg={12}>
                 <Paper className={classes.paper7}>
-                  <Image
-                    src="/images/Chat-seller.png"
-                    alt=""
-                    width={"400"}
-                    height={"50"}
-                  />
+                <Button className={classes.btnChat} variant="contained"><QuestionAnswer/>พูดคุยกับผู้ขาย</Button>
                 </Paper>
               </Grid>
               <Grid item xs={6} md={6} lg={12}>
                 <Paper className={classes.paper7}>
-                  <Image
-                    src="/images/Call-seller.png"
-                    alt=""
-                    width={"400"}
-                    height={"50"}
-                  />
+                <Button className={classes.btnCall} variant="contained"><PhoneCallback/>โทรหาผู้ขาย</Button>
                 </Paper>
               </Grid>
             </Grid>
