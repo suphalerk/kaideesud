@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme: Theme) =>
       //   float: "right",
       marginLeft: "1em",
       color: "#fff",
-      backgroundColor: "#00C900",
+      backgroundColor: "#FF5100",
       ["@media (max-width:751px)"]: {
         marginLeft: "0em",
         fontSize: "11px",
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme: Theme) =>
     btnRegister: {
       //   float: "right",
       marginLeft: "1em",
-      color: "#00C900",
+      color: "#000",
       ["@media (max-width:1300px)"]: {
         display: "none",
       },
@@ -100,10 +100,10 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     menuButton: {
       marginRight: theme.spacing(2),
-      backgroundColor:'#00C900',
+      backgroundColor:'#FF5100',
       marginLeft:'1em',
       '&:hover' : {
-        backgroundColor:'#00C900',
+        backgroundColor:'#FF5100',
       },
       ["@media (min-width:800px)"]: {
         display: "none !important",
@@ -142,7 +142,7 @@ export default function AutoGrid() {
                 className={classes.logo}
                 src="/images/logo1.png"
                 alt=""
-                width={"170"}
+                width={"120"}
                 height={"45"}
               />
             </Link>

@@ -1,9 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import { createStyles, Grid, Link, Paper, Theme } from "@material-ui/core";
+import { Button, createStyles, Grid, Link, Paper, Theme } from "@material-ui/core";
 import Image from "next/image";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { Content } from '../interfaces/product'
+import { PhoneCallback, QuestionAnswer } from "@material-ui/icons";
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -18,6 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: "#fff",
       border: "solid 1px #e1e1e1",
       padding: "0px",
+      paddingBottom:'1em'
     },
     mobileDetail: {
       width: "217",
@@ -34,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: "16px",
     },
     more: {
-      color: "#429EFE",
+      color: "#000",
       width: "fit-content",
       fontSize: "13px",
       float: "right",
@@ -55,7 +57,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     textHeader: {
       fontSize: "1.5em",
-      color: "#213aa3",
+      color: "#000",
       fontWeight:'bold',
 
       ["@media (width:375px)"]: {
@@ -104,7 +106,7 @@ const useStyles = makeStyles((theme: Theme) =>
     textCost:{
       textAlign: "left",
       fontSize: "2em",
-      color: "#00C900",
+      color: "#FF5100",
       fontWeight:'bold',
       paddingLeft: '5px',
       marginTop:'0px',
@@ -126,7 +128,25 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     btnCenter:{
       textAlign:'center',
-    }
+    },
+    btnCall : {
+      backgroundColor:"#FF5100",
+      color:"#fff",
+      borderRadius:"15px",
+      paddingLeft: '40px',
+      paddingRight: '40px',
+      paddingTop:'10px',
+      paddingBottom:'10px',
+    },
+    btnChat:{
+      backgroundColor:"#008C97",
+      color:"#fff",
+      borderRadius:"15px",
+      paddingLeft: '40px',
+      paddingRight: '40px',
+      paddingTop:'10px',
+      paddingBottom:'10px',
+    },
   })
 );
 
@@ -173,22 +193,24 @@ export default function MediaCard(props: { contents: Content[] }) {
             
             <Grid className={classes.gridFlex}>
               <Grid item xs lg={6}>
-                <Image
+              <Button className={classes.btnChat} variant="contained"><QuestionAnswer/>แชท</Button>
+                {/* <Image
                   className="img-chat"
-                  src="/images/Chat.png"
+                  src="/images/KAIDEESUD-52.png"
                   alt=""
                   width={"130"}
                   height={"45"}
-                />
+                /> */}
               </Grid>
               <Grid item xs lg={6}>
-                <Image
+              <Button className={classes.btnCall} variant="contained"><PhoneCallback/>โทร</Button>
+                {/* <Image
                   className="img-call"
-                  src="/images/Call.png"
+                  src="/images/KAIDEESUD-54.png"
                   alt=""
                   width={"130"}
                   height={"45"}
-                />
+                /> */}
               </Grid>
             </Grid>
           </Paper>

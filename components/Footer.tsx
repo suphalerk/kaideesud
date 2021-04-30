@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
-      backgroundColor: "#00CE00",
+      backgroundColor: "#008C97",
 
       ["@media (width:375px)"]: {
         marginTop: "5%",
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: theme.spacing(2),
       textAlign: "center",
       color: theme.palette.text.secondary,
-      backgroundColor: "#00CE00 !important",
+      backgroundColor: "#008C97 !important",
       boxShadow: "none",
     },
     p: {
@@ -62,14 +62,14 @@ export default function AutoGrid() {
               เกี่ยวกับเรา | ติดต่อเรา | ติดต่อลงโฆษณา |
               นโยบายความเป็นส่วนตัว | ข้อกำหนดและเงื่อนไขการใช้งาน
             </p>
-            <p className={classes.p}>© 2021 KAIDEEWA.COM</p>
+            <p className={classes.p}>© 2021 KAIDESUD.COM</p>
           </Paper>
         </Grid>
         <Grid item xs={3} className={classes.centerlogo}>
           <Paper className={classes.paper}>
             <Image
               className={classes.logo1}
-              src="/images/logo1.png"
+              src="/images/logo2.png"
               alt=""
               width={"300"}
               height={"70"}

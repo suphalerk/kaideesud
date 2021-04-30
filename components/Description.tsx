@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     textHeader: {
       fontSize: "1.5em",
-      color: "#213aa3",
+      color: "#000",
       fontWeight: "bold",
 
       ["@media (width:375px)"]: {
@@ -70,7 +70,7 @@ export default function AutoGrid() {
 
   return (
     <div className={classes.root}>
-      <p className={classes.textHeader}>ทำไมต้องซื้อของกับ Kaideewa</p>
+      <p className={classes.textHeader}>ทำไมต้องซื้อของกับ Kaideesud</p>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
@@ -83,7 +83,7 @@ export default function AutoGrid() {
               ก็สามารถจับจองเป็นเจ้าของได้ในไม่กี่ขั้นตอน
               ผู้ขายเองก็สามารถเข้าถึงลูกค้าจำนวนมากขึ้น
               ไม่ว่าเราหรือลูกค้าจะอยู่ที่ไหน
-              ก็ซื้อขายสินค้ากันได้รวดเร็วทันใจเหมือนอยู่ใกล้แค่เอื้อม KaideeWa
+              ก็ซื้อขายสินค้ากันได้รวดเร็วทันใจเหมือนอยู่ใกล้แค่เอื้อม KaideeSud
               คือแพลตฟอร์มที่คุณสามารถซื้อขายออนไลน์ได้อย่างใจ
               มีหมวดหมู่สินค้าทั้งมือหนึ่งหรือมือสองมากกว่า 30
               หมวดหมู่ให้เลือกซื้อและลงขาย ไม่ว่าจะเป็นเสื้อผ้า รองเท้า กระเป๋า

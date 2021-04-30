@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
       boxShadow: "none",
     },
     textHeader: {
-      color: "#213aa3",
+      color: "#000",
       fontWeight: "bold",
       padding: " 0px",
       fontSize: " 1.5em",
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: "0px",
     },
     more: {
-      color: "#429EFE",
+      color: "#000",
       width: "fit-content",
       fontSize: "13px",
       float: "right",

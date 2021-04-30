@@ -11,10 +11,10 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     paper: {
-      padding: "0px 16px 0px 16px",
+      padding: "20px 16px 20px 16px",
       textAlign: "left",
       color: theme.palette.text.secondary,
-      backgroundColor: "#f2f2f2",
+      backgroundColor: "#008C97",
       boxShadow: "none",
       ["@media (width:375px)"]: {
         width: "330px",
@@ -27,12 +27,13 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     smallLogo: {
-      width: "115px",
+      width: "70px",
       margin: "0px 0px -6px 0px",
-      paddingLeft: " 5px",
+      paddingRight: "5px",
+
     },
     textGreen: {
-      color: "#00C900",
+      color: "#fff",
       fontSize: "1.5rem",
       padding: "0",
       textAlign: "center",
@@ -40,7 +41,15 @@ const useStyles = makeStyles((theme: Theme) =>
     textHeader: {
       fontSize: "18px",
       textAlign: "left",
-      backgroundColor: "#00C660",
+      backgroundColor: "#008C97",
+      padding: "1px 8px 1px 15px",
+      color: " #fff",
+      margin: "-15px",
+    },
+    Header2: {
+      fontSize: "18px",
+      textAlign: "left",
+      backgroundColor: "#FF5100",
       padding: "1px 8px 1px 15px",
       color: " #fff",
       margin: "-15px",
@@ -53,7 +62,20 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: "1px 8px 1px 15px",
       fontSize: "18px",
       textAlign: "left",
-      backgroundColor: "#d7dde1",
+      backgroundColor: "#008C97",
+      boxShadow: "none",
+      borderRadius:'0px'
+      // backgroundColor: "#E8EEF2",
+    },
+    Header3: {
+      color: " #000",
+      marginTop: "0px",
+      marginLeft: "-15px",
+      marginRight: "-15px",
+      padding: "1px 8px 1px 15px",
+      fontSize: "18px",
+      textAlign: "left",
+      backgroundColor: "#FF5100",
       boxShadow: "none",
       borderRadius:'0px'
       // backgroundColor: "#E8EEF2",
@@ -66,19 +88,25 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: "1.5em",
     },
     btnSell: {
-      backgroundColor: "#fff",
-      color: "#000",
+      backgroundColor: "#FF5100",
+      color: "#fff",
       float: "right",
       padding: "3px 21px",
+      borderRadius:"15px",
+      "&:hover": {
+        backgroundColor: "#FF5100",
+      }
     },
     btnSell2: {
-      backgroundColor: "#00C660",
-      color: "#000",
+      backgroundColor: "#FF5100",
+      color: "#fff",
       float: "right",
       padding: "3px 21px",
+      
     },
     textSpan: {
       paddingLeft: "10px",
+      color:'#fff'
     },
     gridCenter: {
       alignSelf: "center",
@@ -108,14 +136,15 @@ export default function AutoGrid() {
   return (
     <div
       className={classes.root}
-      style={{ backgroundColor: "#f2f2f2", marginTop: "1em" }}
+      style={{ backgroundColor: "#fff", marginTop: "1em" }}
     >
       <Grid container spacing={4}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <p className={classes.textGreen}>
+            <img className={classes.smallLogo} src="/images/logo2.png" />
               ตอบโจทย์ทุกการซื้อขายกับเรา
-              <img className={classes.smallLogo} src="/images/logo1.png" />
+             
             </p>
           </Paper>
         </Grid>
@@ -183,14 +212,14 @@ export default function AutoGrid() {
             </Paper>
           </Grid>
           <Grid item xs={12} lg={6} className={classes.grid}>
-            <Paper className={classes.textHeader}>
+            <Paper className={classes.Header2}>
               <p>
                 ผู้ซื้อ<Button className={classes.btnSell2}></Button>
               </p>
             </Paper>
             <Paper
               style={{ marginTop: "15px" }}
-              className={classes.textHeader2}
+              className={classes.Header3}
             >
               <p>
                 <Image
@@ -204,7 +233,7 @@ export default function AutoGrid() {
                 </span>
               </p>
             </Paper>
-            <Paper className={classes.textHeader2}>
+            <Paper className={classes.Header3}>
               <p>
                 <Image
                   src="/images/CORRECT.png"
@@ -217,7 +246,7 @@ export default function AutoGrid() {
                 </span>
               </p>
             </Paper>
-            <Paper className={classes.textHeader2}>
+            <Paper className={classes.Header3}>
               <p>
                 <Image
                   src="/images/CORRECT.png"
@@ -230,7 +259,7 @@ export default function AutoGrid() {
                 </span>
               </p>
             </Paper>
-            <Paper className={classes.textHeader2}>
+            <Paper className={classes.Header3}>
               <p className={classes.ptext}></p>
             </Paper>
           </Grid>
